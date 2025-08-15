@@ -115,11 +115,6 @@ export default function TermsPage() {
             本サービスに関して紛争が生じた場合には、東京地方裁判所を専属的合意管轄とします。
           </p>
         </section>
-
-        <section className="mt-8 pt-6 border-t border-gray-200">
-          <p className="text-sm text-gray-600">制定日：2025年1月1日</p>
-          <p className="text-sm text-gray-600">運営者：calliope-pro</p>
-        </section>
       </div>
 
       <div className="mt-8 text-center">

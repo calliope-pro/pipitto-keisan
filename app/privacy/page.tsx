@@ -163,12 +163,6 @@ export default function PrivacyPage() {
             </a>までご連絡ください。
           </p>
         </section>
-
-        <section className="mt-8 pt-6 border-t border-gray-200">
-          <p className="text-sm text-gray-600">制定日：2025年1月1日</p>
-          <p className="text-sm text-gray-600">最終更新日：2025年1月1日</p>
-          <p className="text-sm text-gray-600">運営者：calliope-pro</p>
-        </section>
       </div>
 
       <div className="mt-8 text-center">
