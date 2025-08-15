@@ -9,7 +9,7 @@ export default function Page(){
   const [ops, setOps] = useState<Operation[]>([]);
   const [dA, setDA] = useState(2);
   const [dB, setDB] = useState(2);
-  const [count, setCount] = useState(8);
+  const [count, setCount] = useState(9);
   const [divisionMode, setDivisionMode] = useState<DivisionMode>('remainder-allowed');
   const [showAnswers, setShowAnswers] = useState(false);
   const [seed, setSeed] = useState(0);
@@ -74,17 +74,17 @@ export default function Page(){
             </div>
             <div className="flex items-center gap-3">
               <label className="w-28 text-sm text-gray-700">左の桁数</label>
-              <input type="number" value={dA} min={1} max={6} onChange={e=>setDA(Number(e.target.value))}
+              <input type="number" value={dA} min={1} max={10} onChange={e=>setDA(Number(e.target.value))}
                 className="w-28 rounded-xl border px-3 py-2"/>
             </div>
             <div className="flex items-center gap-3">
               <label className="w-28 text-sm text-gray-700">右の桁数</label>
-              <input type="number" value={dB} min={1} max={6} onChange={e=>setDB(Number(e.target.value))}
+              <input type="number" value={dB} min={1} max={10} onChange={e=>setDB(Number(e.target.value))}
                 className="w-28 rounded-xl border px-3 py-2"/>
             </div>
             <div className="flex items-center gap-3">
               <label className="w-28 text-sm text-gray-700">問題数</label>
-              <input type="number" value={count} min={1} max={24} onChange={e=>setCount(Number(e.target.value))}
+              <input type="number" value={count} min={1} max={60} onChange={e=>setCount(Number(e.target.value))}
                 className="w-28 rounded-xl border px-3 py-2"/>
             </div>
             <div className="flex items-center gap-3">
@@ -113,6 +113,42 @@ export default function Page(){
           {problems.map((p, i) => (
             <LatexProblem key={i} p={p} show={showAnswers} />
           ))}
+        </div>
+      </section>
+
+      <section className="no-print mt-12 prose prose-sm max-w-none">
+        <h2 className="text-xl font-semibold mb-4">筆算プリントについて</h2>
+        <div className="grid md:grid-cols-2 gap-6 text-sm text-gray-600">
+          <div>
+            <h3 className="font-medium text-gray-800 mb-2">このツールの特徴</h3>
+            <ul className="space-y-1">
+              <li>• <strong>美しい数式表示</strong>: MathJax数式による高品質な筆算</li>
+              <li>• <strong>カスタマイズ可能</strong>: 桁数や問題数を自由に設定</li>
+              <li>• <strong>4つの演算</strong>: 足し算、引き算、掛け算、割り算に対応</li>
+              <li>• <strong>筆算の正しい表示</strong>: 桁ずらしや割り算の長除法記法</li>
+              <li>• <strong>完全無料</strong>: 会員登録不要でご利用いただけます</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="font-medium text-gray-800 mb-2">家庭学習での活用</h3>
+            <ul className="space-y-1">
+              <li>• <strong>毎日の算数練習</strong>: 宿題の補完や予習・復習に</li>
+              <li>• <strong>苦手分野の克服</strong>: 特定の演算を重点的に練習</li>
+              <li>• <strong>計算スピード向上</strong>: 繰り返し練習で計算力アップ</li>
+              <li>• <strong>親子で学習</strong>: 答え表示機能で採点も簡単</li>
+              <li>• <strong>個別対応</strong>: お子様のレベルに合わせた問題作成</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div className="mt-6 p-4 bg-blue-50 rounded-lg">
+          <h3 className="font-medium text-blue-800 mb-2">小学生の算数学習をサポート</h3>
+          <p className="text-sm text-blue-700">
+            筆算は小学生の算数学習において重要な基礎技能です。正しい筆算の書き方を身につけることで、
+            計算ミスを減らし、より複雑な数学への理解を深めることができます。
+            このツールで生成される美しい筆算プリントは、お子様の学習意欲を高め、
+            効果的な算数学習をサポートします。
+          </p>
         </div>
       </section>
 

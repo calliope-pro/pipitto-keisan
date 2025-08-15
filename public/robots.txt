@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pipitto-keisan.netlify.app/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+# Block specific paths if any
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all content for educational purposes
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
