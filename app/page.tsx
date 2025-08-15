@@ -152,7 +152,12 @@ export default function Page(){
         </div>
       </section>
 
-      <footer className="no-print text-center text-xs text-gray-500 my-10 space-y-1">
+      <footer className="no-print text-center text-xs text-gray-500 my-10 space-y-2">
+        <div className="flex justify-center gap-4 mb-2">
+          <a href="/terms" className="underline hover:text-gray-700">利用規約</a>
+          <a href="/privacy" className="underline hover:text-gray-700">プライバシーポリシー</a>
+          <a href="https://github.com/calliope-pro/pipitto-keisan" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">GitHub</a>
+        </div>
         <div>© 2025-present calliope. All rights reserved.</div>
         <div>Licensed under <a href="https://github.com/calliope-pro/pipitto-keisan/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">MIT License</a></div>
       </footer>
