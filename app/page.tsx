@@ -158,7 +158,7 @@ export default function Page(){
           <a href="/privacy" className="underline hover:text-gray-700">プライバシーポリシー</a>
           <a href="https://github.com/calliope-pro/pipitto-keisan" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">GitHub</a>
         </div>
-        <div>© 2025-present calliope. All rights reserved.</div>
+        <div>© 2025-present calliope-pro All rights reserved.</div>
         <div>Licensed under <a href="https://github.com/calliope-pro/pipitto-keisan/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">MIT License</a></div>
       </footer>
     </main>
