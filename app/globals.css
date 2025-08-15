@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{ --bg:#fffdf8; --ink:#111827; --brand:#0ea5e9; }
+html,body{ height:100%; }
+body{ background:var(--bg); color:var(--ink); font-feature-settings:"palt" 1; }
+@media print{ .no-print{display:none!important} .page-break{page-break-after:always} }
