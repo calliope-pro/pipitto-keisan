@@ -111,7 +111,7 @@ export default function Page(){
         <h2 className="text-xl font-semibold">{showAnswers ? '解答' : '問題'}</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {problems.map((p, i) => (
-            <LatexProblem key={i} p={p} show={showAnswers} />
+            <LatexProblem key={`${seed}-${showAnswers}-${i}`} p={p} show={showAnswers} />
           ))}
         </div>
       </section>
